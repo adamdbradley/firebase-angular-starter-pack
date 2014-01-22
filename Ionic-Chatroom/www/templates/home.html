@@ -1,12 +1,9 @@
-<header-bar
-  title="'Home'"
+
+<view title="'Home'"
   left-buttons="leftButtons"
-  right-buttons="rightButtons"
-  type="bar-energized"
-  align-title="center">
-</header-bar>
-<view>
-  <content>
+  right-buttons="rightButtons">
+
+  <content has-header="true">
     <list>
       <item ng-repeat="room in rooms" type="item-text-wrap" href="#/rooms/{{room.id}}" ng-if="room.title">
         <h3>{{room.title}}</h3>
@@ -14,4 +11,5 @@
       </item>
     </list>
   </content>
-</nav-view>
+
+</view>
